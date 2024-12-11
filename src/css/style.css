@@ -1,0 +1,21 @@
+/* General styles */
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: var(--margin-base);
+}
+
+h1, h2 {
+    margin-bottom: var(--margin-base);
+}
+
+/* Components */
+.component {
+    margin-bottom: var(--margin-base);
+}
+
+.component--hidden {
+    display: none;
+}
