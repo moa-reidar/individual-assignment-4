@@ -23,6 +23,36 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+        <!-- Buttons -->
+        <section id="button" class="component component--hidden">
+            <h2 class="component__title">Buttons</h2>
+            <button class="button button--default" data-state="default">Default</button>
+            <button class="button button--hover" data-state="hover">Hover</button>
+            <button class="button button--active" data-state="active">Active</button>
+        </section>
+        
+        <!-- Dropdowns -->
+        <section id="dropdown" class="component component--hidden">
+            <h2 class="component__title">Dropdowns</h2>
+            <select class="dropdown dropdown--default">
+                <option class="dropdown__option" value="default">Default</option>
+                <option class="dropdown__option" value="active">Active</option>
+            </select>
+            <select class="dropdown dropdown--disabled" disabled>
+                <option class="dropdown__option">Disabled Dropdown</option>
+            </select>
+        </section>
+    
+        <!-- Alerts -->
+        <section id="alert" class="component component--hidden">
+            <h2 class="component__title">Alerts</h2>
+            <div class="alert alert--success">Success Alert (Active)</div>
+            <div class="alert alert--disabled">Disabled Alert</div>
+        </section>
+    </main>
+    
     
 </body>
 </html>
