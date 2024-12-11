@@ -70,3 +70,20 @@ h1, h2 {
     cursor: not-allowed;
 }
 
+/* Alerts */
+.alert {
+    padding: var(--padding-base);
+    border-radius: var(--border-radius);
+    color: #fff;
+    margin-bottom: var(--margin-small);
+}
+
+.alert--success {
+    background-color: var(--secondary-color);
+}
+
+.alert--disabled {
+    background-color: #ccc;
+    color: #666;
+}
+
