@@ -118,3 +118,22 @@ h1, h2 {
     opacity: 0.5;
 }
 
+
+/* Toasts */
+.toast {
+    padding: var(--padding-base);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--margin-small);
+    color: #fff;
+}
+
+.toast--info {
+    background-color: var(--primary-color);
+}
+
+.toast--disabled {
+    background-color: #ccc;
+    color: #666;
+    opacity: 0.7;
+}
+
