@@ -12,8 +12,9 @@ function showComponent(targetId) {
         showComponent(link.getAttribute('href').substring(1));
     });
   });
+  
   // Håndter knapper med spesifikke tilstander
-document.querySelectorAll('.button').forEach(button => {
+  document.querySelectorAll('.button').forEach(button => {
     button.addEventListener('click', () => {
         if (button.dataset.state === 'active') {
             document.querySelectorAll('.button').forEach(btn => btn.classList.remove('button--active-click'));
@@ -31,18 +32,18 @@ document.querySelectorAll('.button').forEach(button => {
         button.classList.remove('button--hovering');
     });
   });
-
+  
   // Modal-funksjonalitet
-const modal = document.querySelector('.modal');
-document.querySelector('.button.open-modal').addEventListener('click', () => {
-  modal.classList.add('modal--visible');
-});
-document.querySelector('.modal__close-button').addEventListener('click', () => {
-  modal.classList.remove('modal--visible');
-});
-
-// Accordion-funksjonalitet
-document.querySelectorAll('.accordion__header').forEach(header => {
+  const modal = document.querySelector('.modal');
+  document.querySelector('.button.open-modal').addEventListener('click', () => {
+    modal.classList.add('modal--visible');
+  });
+  document.querySelector('.modal__close-button').addEventListener('click', () => {
+    modal.classList.remove('modal--visible');
+  });
+  
+  // Accordion-funksjonalitet
+  document.querySelectorAll('.accordion__header').forEach(header => {
     header.addEventListener('click', () => {
         document.querySelectorAll('.accordion__content').forEach(content => content.style.display = 'none');
         const content = header.nextElementSibling;
