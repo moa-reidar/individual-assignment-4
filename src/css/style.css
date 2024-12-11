@@ -36,3 +36,24 @@ h1, h2 {
     font-size: var(--font-size-base);
     padding: var(--padding-small);
 }
+
+/* Buttons */
+.button {
+    padding: var(--padding-small) var(--padding-base);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: var(--font-size-base);
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button--hovering {
+    background-color: var(--secondary-color);
+  }
+  
+  .button--active-click {
+    background-color: var(--warning-color);
+  }
+  
