@@ -137,3 +137,26 @@ h1, h2 {
     opacity: 0.7;
 }
 
+/* Accordions */
+.accordion__header {
+    padding: var(--padding-base);
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+.accordion__content {
+    padding: var(--padding-base);
+    display: none;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    margin-top: var(--margin-small);
+}
+
+.accordion__header:active + .accordion__content {
+    display: block;
+}
+
+
