@@ -31,4 +31,14 @@ document.querySelectorAll('.button').forEach(button => {
         button.classList.remove('button--hovering');
     });
   });
+
+  // Modal-funksjonalitet
+const modal = document.querySelector('.modal');
+document.querySelector('.button.open-modal').addEventListener('click', () => {
+  modal.classList.add('modal--visible');
+});
+document.querySelector('.modal__close-button').addEventListener('click', () => {
+  modal.classList.remove('modal--visible');
+});
+
   
