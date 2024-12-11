@@ -41,4 +41,14 @@ document.querySelector('.modal__close-button').addEventListener('click', () => {
   modal.classList.remove('modal--visible');
 });
 
+// Accordion-funksjonalitet
+document.querySelectorAll('.accordion__header').forEach(header => {
+    header.addEventListener('click', () => {
+        document.querySelectorAll('.accordion__content').forEach(content => content.style.display = 'none');
+        const content = header.nextElementSibling;
+        if (content) content.style.display = 'block';
+    });
+  });
+  
+
   
