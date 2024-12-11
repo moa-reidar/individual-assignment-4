@@ -57,3 +57,16 @@ h1, h2 {
     background-color: var(--warning-color);
   }
   
+  /* Dropdowns */
+.dropdown {
+    padding: var(--padding-small);
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+}
+
+.dropdown--disabled {
+    background-color: #f0f0f0;
+    color: #aaa;
+    cursor: not-allowed;
+}
+
