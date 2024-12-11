@@ -19,3 +19,20 @@ h1, h2 {
 .component--hidden {
     display: none;
 }
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary-color);
+    padding: var(--padding-base);
+}
+
+.navbar__menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar__link {
+    color: #fff;
+    font-size: var(--font-size-base);
+    padding: var(--padding-small);
+}
