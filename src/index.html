@@ -7,52 +7,53 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/style.css">
+    
 </head>
 <body>
-    <header class="navbar">
-        <nav class="navbar__menu">
-            <ul class="navbar__list">
-                <li class="navbar__item"><a href="#button" id="button-link" class="navbar__link">Buttons</a></li>
-                <li class="navbar__item"><a href="#dropdown" id="dropdown-link" class="navbar__link">Dropdowns</a></li>
-                <li class="navbar__item"><a href="#alert" id="alert-link" class="navbar__link">Alerts</a></li>
-                <li class="navbar__item"><a href="#tooltip" id="tooltip-link" class="navbar__link">Tooltips</a></li>
-                <li class="navbar__item"><a href="#toast" id="toast-link" class="navbar__link">Toasts</a></li>
-                <li class="navbar__item"><a href="#accordion" id="accordion-link" class="navbar__link">Accordions</a></li>
-                <li class="navbar__item"><a href="#modal" id="modal-link" class="navbar__link">Modals</a></li>
-                <li class="navbar__item"><a href="#card" id="card-link" class="navbar__link">Cards</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="navbar">
+    <nav class="navbar__menu">
+        <ul class="navbar__list">
+            <li class="navbar__item"><a href="#button" id="button-link" class="navbar__link">Buttons</a></li>
+            <li class="navbar__item"><a href="#dropdown" id="dropdown-link" class="navbar__link">Dropdowns</a></li>
+            <li class="navbar__item"><a href="#alert" id="alert-link" class="navbar__link">Alerts</a></li>
+            <li class="navbar__item"><a href="#tooltip" id="tooltip-link" class="navbar__link">Tooltips</a></li>
+            <li class="navbar__item"><a href="#toast" id="toast-link" class="navbar__link">Toasts</a></li>
+            <li class="navbar__item"><a href="#accordion" id="accordion-link" class="navbar__link">Accordions</a></li>
+            <li class="navbar__item"><a href="#modal" id="modal-link" class="navbar__link">Modals</a></li>
+            <li class="navbar__item"><a href="#card" id="card-link" class="navbar__link">Cards</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <main>
-        <!-- Buttons -->
-        <section id="button" class="component component--hidden">
-            <h2 class="component__title">Buttons</h2>
-            <button class="button button--default" data-state="default">Default</button>
-            <button class="button button--hover" data-state="hover">Hover</button>
-            <button class="button button--active" data-state="active">Active</button>
-        </section>
-        
-        <!-- Dropdowns -->
-        <section id="dropdown" class="component component--hidden">
-            <h2 class="component__title">Dropdowns</h2>
-            <select class="dropdown dropdown--default">
-                <option class="dropdown__option" value="default">Default</option>
-                <option class="dropdown__option" value="active">Active</option>
-            </select>
-            <select class="dropdown dropdown--disabled" disabled>
-                <option class="dropdown__option">Disabled Dropdown</option>
-            </select>
-        </section>
+<main>
+    <!-- Buttons -->
+    <section id="button" class="component component--hidden">
+        <h2 class="component__title">Buttons</h2>
+        <button class="button button--default" data-state="default">Default</button>
+        <button class="button button--hover" data-state="hover">Hover</button>
+        <button class="button button--active" data-state="active">Active</button>
+    </section>
     
-        <!-- Alerts -->
-        <section id="alert" class="component component--hidden">
-            <h2 class="component__title">Alerts</h2>
-            <div class="alert alert--success">Success Alert (Active)</div>
-            <div class="alert alert--disabled">Disabled Alert</div>
-        </section>
+    <!-- Dropdowns -->
+    <section id="dropdown" class="component component--hidden">
+        <h2 class="component__title">Dropdowns</h2>
+        <select class="dropdown dropdown--default">
+            <option class="dropdown__option" value="default">Default</option>
+            <option class="dropdown__option" value="active">Active</option>
+        </select>
+        <select class="dropdown dropdown--disabled" disabled>
+            <option class="dropdown__option">Disabled Dropdown</option>
+        </select>
+    </section>
 
-            <!-- Tooltips -->
+    <!-- Alerts -->
+    <section id="alert" class="component component--hidden">
+        <h2 class="component__title">Alerts</h2>
+        <div class="alert alert--success">Success Alert (Active)</div>
+        <div class="alert alert--disabled">Disabled Alert</div>
+    </section>
+
+    <!-- Tooltips -->
     <section id="tooltip" class="component component--hidden">
         <h2 class="component__title">Tooltips</h2>
         <button class="tooltip tooltip--active">Hover me
@@ -80,34 +81,39 @@
         </div>
     </section>
 
-        <!-- Modals -->
-        <section id="modal" class="component component--hidden">
-            <h2 class="component__title">Modals</h2>
-            <button class="button open-modal">Open Modal</button>
-            <div class="modal">
-                <div class="modal__content">
-                    <p class="modal__text">This is a modal window.</p>
-                    <button class="button modal__close-button">Close</button>
-                </div>
-            </div>
-        </section>
-        
-      
-          <!-- Cards -->
-          <section id="card" class="component component--hidden">
-            <h2 class="component__title">Cards</h2>
-            <div class="card card--default">
-                <h3 class="card__title">Default Card</h3>
-                <p class="card__description">This is a default card.</p>
-            </div>
-            <div class="card card--hover">
-                <h3 class="card__title">Hover Card</h3>
-                <p class="card__description">This card changes when hovered.</p>
-            </div>
-        </section>
-      
-    </main>
-    
-    
+    <!-- Modals -->
+    <section id="modal" class="component component--hidden">
+      <h2 class="component__title">Modals</h2>
+      <button class="button open-modal">Open Modal</button>
+      <div class="modal">
+          <div class="modal__content">
+              <p class="modal__text">This is a modal window.</p>
+              <button class="button modal__close-button">Close</button>
+          </div>
+      </div>
+  </section>
+  
+
+    <!-- Cards -->
+    <section id="card" class="component component--hidden">
+      <h2 class="component__title">Cards</h2>
+      <div class="card card--default">
+          <h3 class="card__title">Default Card</h3>
+          <p class="card__description">This is a default card.</p>
+      </div>
+      <div class="card card--hover">
+          <h3 class="card__title">Hover Card</h3>
+          <p class="card__description">This card changes when hovered.</p>
+      </div>
+  </section>
+  
+</main>
+
+<footer class="footer">
+    <p class="footer__text">&copy; 2024 Design System Project</p>
+</footer>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
+
