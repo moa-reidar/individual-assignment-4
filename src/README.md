@@ -1,3 +1,9 @@
+
+link github: https://github.com/moa-reidar/individual-assignment-4.git
+
+link netlify: https://675a2e1fb72cf0addb74e556--sparkling-strudel-9bf7bb.netlify.app/
+
+
 Design System with Interactive Components
 
 
